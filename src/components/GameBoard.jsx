@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 
 const initialGameBoard = [
   [null, null, null],
@@ -7,7 +7,7 @@ const initialGameBoard = [
 ]
 
 
-export default function GameBoard({ onSelectSquare }) {
+export default function GameBoard({ onSelectSquare, turns }) {
   let gameBoard = initialGameBoard;
 
   for ( const turn of turns) {
